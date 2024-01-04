@@ -1,0 +1,51 @@
+// #include "zombie.hpp"
+#include <iostream>
+#include <string>
+
+class Zombie{
+	public:
+		Zombie(std::string name);
+		~Zombie();
+		void announce(void);
+		Zombie *newZombie(std::string name);
+		void randomChump(std::string name);
+	private:
+		std::string _name;
+};
+
+Zombie::Zombie(std::string name)
+{
+	std::cout << "==Zombie "<< name << "created==" << std::endl;
+	this._name = name;
+}
+
+Zombie::~Zombie()
+{
+	std::cout << "==Zombie "<< name << "deleted==" << std::endl;
+}
+
+
+Zombie *Zombie::newZombie(std::string name)
+{
+	return (new Zombie(name));
+}
+
+void Zombie::randomChump(std::string name)
+{
+	Zoimbie stack_zombie;
+	stack_zombie._name = name;
+	stack_zombie.announce();
+}
+
+void Zombie::announce(void)
+{
+	std::cout << this._name << ": BraiiiiiiinnnzzzZ..."
+}
+
+int main()
+{
+	Zombie *zombie;
+	zombie = newZombie("bill");
+	zombie.announce();
+	delete(zombie);
+}
