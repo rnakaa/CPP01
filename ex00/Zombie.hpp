@@ -1,5 +1,7 @@
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
+#include <iostream>
+#include <string>
 
 class Zombie{
 	private:
@@ -10,6 +12,7 @@ class Zombie{
 		~Zombie();
 		void setname(std::string name);
 		void announce(void);
+		static Zombie *newZombie(std::string name);
+		static void randomChump(std::string name);
 };
-
 #endif

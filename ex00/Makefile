@@ -1,10 +1,11 @@
-CPP = c++
+CXX = c++
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = zombie
 
 SRCS = 	main.cpp \
+		Zombie.cpp \
 		randomChump.cpp \
 		newZombie.cpp
 
@@ -16,10 +17,10 @@ HEADERS = Zombie.hpp
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CPP) $(CPPFLAGS) -o $@ $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
 
 %.o: %.cpp $(HEADERS)
-	$(CPP) $(CPPFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 .PHONY:clean
 clean:
