@@ -1,16 +1,16 @@
 #include "Zombie.hpp"
 
 Zombie::Zombie(std::string name){
-	std::cout << "constractor" << std::endl;
+	std::cout << "constructor" << std::endl;
 	_name = name;
 }
 
 Zombie::Zombie(){
-	std::cout << "constractor" << std::endl;
+	std::cout << "constructor" << std::endl;
 }
 
 Zombie::~Zombie(){
-	std::cout << "destractor" << std::endl;
+	std::cout << "destructor" << std::endl;
 	std::cout << _name << ": BraiiiiiinnnzzZ..." << std::endl;
 }
 
