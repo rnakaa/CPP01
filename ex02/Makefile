@@ -2,16 +2,12 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = zombie
+NAME = hi_this_is_brain
 
 SRCS = 	main.cpp \
-		Zombie.cpp \
-		randomChump.cpp \
-		newZombie.cpp
+		
 
 OBJS = $(SRCS:.cpp=.o)
-
-HEADERS = Zombie.hpp 
 
 .PHONY:all
 all: $(NAME)
@@ -34,6 +30,6 @@ fclean:clean
 re:fclean all
 
 .PHONY:do
-do:re
+do:fclean all $(NAME)
 	./$(NAME)
 
