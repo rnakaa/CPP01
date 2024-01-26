@@ -7,13 +7,13 @@ Weapon::Weapon(std::string type){
 Weapon::Weapon(){
 }
 
-Weapon::~Weapon(std::string type){
+Weapon::~Weapon(){
 }
 
 std::string & Weapon::getType(){
-	return (_type)
+	return (_type);
 }
 
-std::string Weapon::setType(std::type){
+void Weapon::setType(std::string type){
 		_type = type;
 }
