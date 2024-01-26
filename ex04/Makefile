@@ -28,7 +28,7 @@ fclean:clean
 	rm -f $(NAME)
 
 .PHONY:re
-fclean:fclea all
+fclean:fclean all
 
 .PHONY:test
 test:re
