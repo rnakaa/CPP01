@@ -1,8 +1,9 @@
 #ifndef HARL_HPP
 #define HARL_HPP
+#include <iostream>
+#include <string>
 
-
-class Harl{
+class Haral{
 	private:
 		void debug(void);
 		void info(void);
@@ -12,7 +13,7 @@ class Harl{
 		Haral();
 		~Haral();
 		void complain(std::string level);
-}
+};
 
 
 
@@ -22,6 +23,4 @@ class Harl{
 
 
 
-#include <iostream>
-#include <string>
 #endif
