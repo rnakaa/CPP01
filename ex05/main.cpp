@@ -2,5 +2,6 @@
 
 
 int main(){
-	(Haral::debug)();
+	Harl test;
+	test.complain("INFO");
 }

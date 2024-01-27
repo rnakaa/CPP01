@@ -14,8 +14,8 @@ OBJS = $(SRCS:.cpp=.o)
 $(NAME):$(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
-$(OBJS):$(SRCS) $(HEADER)
-	$(CXX) $(CXXFLAGS) -c $< -o @
+%.o : %.cpp $(HEADER)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 .PHONY:all
 all:$(NAME)
