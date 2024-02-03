@@ -25,6 +25,7 @@ int main(int argc, char **argv){
 		return (1);
 	}
 
+	int numberLine = 0;
 	while (std::getline(ifs, line)){
 		std::size_t pos = 0;
 		while ((pos = line.find(s1, pos)) != std::string::npos){
@@ -32,7 +33,9 @@ int main(int argc, char **argv){
 			line.insert(pos, s2);
 			pos += s2.length();
 		}
-		ofs << line << std::endl;
+		if (numberLine++ != 0)
+			ofs << std::endl;
+		ofs << line;
 	}
 	return (0);
 }
