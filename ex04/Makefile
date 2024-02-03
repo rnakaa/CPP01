@@ -16,7 +16,7 @@ all: $(NAME)
 $(NAME):$(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
-%.o:%.cpp $(HEADERS)
+%.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 .PHONY:clean
