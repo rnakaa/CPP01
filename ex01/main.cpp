@@ -7,9 +7,9 @@ int main(){
 
 	if (zombie3 == NULL)
 		return (0);
-//	for (int i = 0;i < 5; i++){
-//		zombie3[i].announce();
-//	}
+	for (int i = 0;i < 5; i++){
+		zombie3[i].announce();
+	}
 
 	delete[] zombie3;
 	return (0);
