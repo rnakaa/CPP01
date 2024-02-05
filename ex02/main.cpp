@@ -7,7 +7,7 @@ int main(){
 
 	std::cout << "address" << std::endl;
 	std::cout << "str      = " << &str << std::endl;
-	std::cout << "strinPTR = " << &*strinPTR << std::endl;
+	std::cout << "strinPTR = " << strinPTR << std::endl;
 	std::cout << "strinREF = " << &strinREF << std::endl << std::endl;
 
 	std::cout << "value" << std::endl;

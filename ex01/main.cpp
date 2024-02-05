@@ -3,7 +3,7 @@
 int main(){
 	Zombie *zombie3;
 
-	zombie3 = Zombie::zombieHorde(5,"namunamu");
+	zombie3 = zombieHorde(5,"namunamu");
 
 	if (zombie3 == NULL)
 		return (0);

@@ -11,7 +11,7 @@ Zombie::Zombie(){
 
 Zombie::~Zombie(){
 	std::cout << "destractor" << std::endl;
-	std::cout << _name << ": BraiiiiiinnnzzZ..." << std::endl;
+	std::cout << _name << "is dead." << std::endl;
 }
 
 void Zombie::setname(std::string name){

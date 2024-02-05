@@ -4,9 +4,9 @@
 int main(){
 	Zombie *zombie2;
 
-	zombie2 = Zombie::newZombie("zombie2");
+	zombie2 = newZombie("zombie2");
 	zombie2->announce();
-	Zombie::randomChump("namunamu");
+	randomChump("namunamu");
 
 	delete zombie2;
 }
