@@ -22,14 +22,14 @@ void Zombie::announce(void){
 	std::cout << _name << ": BraiiiiiinnnzzZ..." << std::endl;
 }
 
-Zombie *newZombie(std::string name){
+Zombie *Zombie::newZombie(std::string name){
 	Zombie *zombie;
 
 	zombie = new Zombie(name);
 	return (zombie);
 }
 
-void randomChump(std::string name){
+void Zombie::randomChump(std::string name){
 	Zombie zombie(name);
 	zombie.announce();
 }
